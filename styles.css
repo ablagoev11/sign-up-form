@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+:root {
+  --validator-color: red;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sign-up {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  position: relative;
+  background-image: url("./images/money-2.png");
+  height: 100%;
+  width: 45%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  width: 100%;
+  background-color: #f9fafb;
+}
+.banner-container {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.banner-items {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.banner-container h1 {
+  font-family: Norse-Bold;
+  color: white;
+  display: inline;
+  align-self: center;
+  font-size: 6rem;
+}
+
+.banner {
+  height: 100%;
+}
+
+.info {
+  margin: 130px 0 75px 0;
+  padding: 0 3rem;
+}
+input {
+  width: 70%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: #e5e7eb 1px solid;
+}
+
+input[type="text"]:focus:invalid,
+input[type="tel"]:focus:invalid,
+input[type="email"]:focus:invalid {
+  outline: none; /* Prevent the default focus outline */
+  border-color: red;
+}
+
+input[type="text"]:focus:valid,
+input[type="tel"]:focus:valid,
+input[type="email"]:focus:valid {
+  outline: none !important;
+  border: greenyellow 1px solid;
+  box-shadow: 0 0 3px #719ece;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-bottom: 12px;
+}
+
+.inputs label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.form-section {
+  width: 100%;
+}
+.divider {
+  background-color: #fff;
+  padding: 0.5rem 3rem 1.5rem 3rem;
+  border: #e5e7eb 1px solid;
+  box-shadow: 0px 3px 9px -1px lightgray;
+}
+.controllers {
+  padding: 0.5rem 3rem;
+  margin-top: 1.5rem;
+}
+
+.info p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.create-account {
+  background-color: #596d48;
+  color: #fff;
+  padding: 0.7rem 2.4rem;
+  border: transparent;
+  border-radius: 5px;
+}
+.controllers span {
+  display: block;
+  margin-top: 35px;
+}
+.controllers a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.password {
+  outline: none;
+  border-color: var(--validator-color);
+}
